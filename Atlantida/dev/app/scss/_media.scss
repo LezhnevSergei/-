@@ -61,17 +61,13 @@
             .promo__text {
                 display: flex;
                 margin: 0 auto;
-                width: 360px !important;
 
                 .text {
-                    flex-grow: 1;
+
                 }
 
                 .head-text {
                     font-size: 25px;
-                    margin-left: 0;
-                    flex-grow: 1;
-                    flex-shrink: 1;
 
                     &:before {
                         content: '';
@@ -95,6 +91,57 @@
 
                         height: 5px;
                         width: 350px;
+                        background-image: url('../img/line-white-big.png');
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        .section-promo {
+            background-position: 60% 50%;
+
+            .promo__text {
+                display: flex;
+                margin: 0 auto;
+
+                .text {
+                    display: block;
+                    flex-grow: 1;
+
+                    margin-bottom: 0;
+                }
+
+                .head-text {
+                    font-size: 25px;
+                    line-height: 40px;
+
+                    &:before {
+                        content: '';
+
+                        position: absolute;
+                        top: -16px;
+                        left: 60px;
+
+                        height: 5px;
+                        width: 200px;
+                        background-image: url('../img/line-white-big.png');
+                        background-repeat: no-repeat;
+                    }
+
+                    &:after {
+                        content: '';
+
+                        position: absolute;
+                        top: 85px;
+                        left: 60px;
+
+                        height: 5px;
+                        width: 200px;
                         background-image: url('../img/line-white-big.png');
                         background-repeat: no-repeat;
                     }

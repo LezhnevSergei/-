@@ -40,5 +40,66 @@
             margin: 0 auto;
             margin-bottom: 15px;
         }
+
+        &__social {
+
+            .social-list {
+                margin-top: 25px;
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .main {
+        margin: 0 auto;
+        .section-promo {
+            background-position: 60% 50%;
+
+            .promo__text {
+                display: flex;
+                margin: 0 auto;
+                width: 360px !important;
+
+                .text {
+                    flex-grow: 1;
+                }
+
+                .head-text {
+                    font-size: 25px;
+                    margin-left: 0;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+
+                    &:before {
+                        content: '';
+
+                        position: absolute;
+                        top: -36px;
+                        left: 0;
+
+                        height: 5px;
+                        width: 350px;
+                        background-image: url('../img/line-white-big.png');
+                        background-repeat: no-repeat;
+                    }
+
+                    &:after {
+                        content: '';
+
+                        position: absolute;
+                        top: 60px;
+                        left: 0;
+
+                        height: 5px;
+                        width: 350px;
+                        background-image: url('../img/line-white-big.png');
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
     }
 }

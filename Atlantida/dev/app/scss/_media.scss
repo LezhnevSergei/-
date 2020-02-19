@@ -1,0 +1,27 @@
+@media (max-width: 1175px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header {
+
+        &__logo {
+
+            margin-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        &__flex-wrap {
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+    }
+}

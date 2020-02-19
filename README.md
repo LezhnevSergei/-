@@ -1,4 +1,1 @@
-Atlantida  
-+ npm i   
-+ gulp  
-  
+

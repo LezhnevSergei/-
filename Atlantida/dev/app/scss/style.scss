@@ -20,6 +20,22 @@ a {
     text-decoration: none;
 }
 
+.button {
+    width: 133px;
+    height: 38px;
+    border: 2px solid #3e3d3d;
+    color: #3e3d3d;
+    background: none;
+
+    font-family: $font-Montserrat;
+    font-size: 13px;
+    text-align: center;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
 .container {
     max-width: $container-width;
     margin: 0 auto;
@@ -122,7 +138,7 @@ a {
 
 .main {
 
-    .section-promo {
+    .section--promo {
 
         overflow: hidden;
 
@@ -196,7 +212,7 @@ a {
                 }
             }
 
-            .promo__scroll-btn {
+            .promo__button--scroll {
                 height: 44px;
                 width: 153px;
 
@@ -228,6 +244,92 @@ a {
 
                     left: 67.5px;
                     top: 34px;
+                }
+            }
+        }
+    }
+
+    .section--about-us {
+        background-color: #e3e3e3;
+        padding-top: 73px;
+
+
+        .about-us__about {
+            background-color: #fff;
+            padding-bottom: 50px;
+
+            .about__img {
+                min-height: 325px;
+                background-image: url('../img/river.jpg');
+            }
+
+            .about__text {
+                max-width: 1030px;
+
+                text-align: center;
+                color: #3e3d3d;
+
+
+                margin: 0 auto;
+                margin-top: 61px;
+                margin-bottom: 41px;
+                
+                .text__head-text {
+                    margin: 0;
+                    margin-left: 2px;
+                    margin-bottom: 65px;
+
+                    font-family: Amsdam, serif;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+
+                    position: relative;
+
+                    &:after {
+                        content: '';
+
+                        background-image: url('../img/line-black.png');
+                        background-repeat: no-repeat;
+                        height: 5px;
+                        width: 187px;
+
+                        position: absolute;
+
+                        left: 50%;
+                        top: 47.5px;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .text__paragraph {
+                    text-align: left;
+                    font-family: $font-CrimsonText;
+                    font-size: 14px;
+
+                    font-weight: bold;
+                    line-height: 25px;
+                    letter-spacing: 0.78px;
+
+                }
+            }
+
+            .about__buttons {
+                display: flex;
+                justify-content: center;
+
+                .buttons__button--black {
+                    margin-right: 5px;
+
+                    background: #3e3d3d;
+                    color: #fff;
+                    letter-spacing: 1.2px;
+                    padding-left: 10px;
+                }
+
+                .buttons__button--white {
+                    letter-spacing: 1.5px;
+                    padding-left: 3.8px;
                 }
             }
         }
